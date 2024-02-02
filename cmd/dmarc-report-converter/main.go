@@ -12,7 +12,7 @@ import (
 
 var version string
 
-func main() {
+func main2() {
 	var (
 		flagVersion bool
 		flagConfig  string

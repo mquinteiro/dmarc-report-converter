@@ -114,7 +114,7 @@ func fetchIMAPAttachments(cfg *config) error {
 				log.Printf("[INFO] imap: found attachment: %v", filename)
 
 				outFile := filepath.Join(cfg.Input.Dir, filename)
-				log.Printf("[INFO] imap: save attachment to: %v", outFile)
+				log.Printf("[INFO] imap: save attachment to: %v", outFile) // aqui leemos el fichero puede ser gzip o zip o xml
 				f, err := os.Create(outFile)
 				if err != nil {
 					log.Printf("[ERROR] imap: %v, skip", err)
